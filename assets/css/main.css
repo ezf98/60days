@@ -4021,3 +4021,80 @@ input, select, textarea {
 #answerMessage.incorrect {
     color: red !important;
 }
+
+/* ==============================
+   CHALLENGE 2
+   ============================== */
+
+#challengeModal2 .challenge-box {
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+}
+
+
+/* Message text */
+
+#hiddenMessageText {
+    text-align: left !important;
+    margin: 25px 0 !important;
+}
+
+#hiddenMessageText p {
+    margin-bottom: 12px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Instruction */
+
+.challenge2-instruction {
+    margin-top: 25px !important;
+    font-weight: bold !important;
+}
+
+
+/* Answer box */
+
+#answerInput2 {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 12px !important;
+    margin: 20px 0 15px !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    color: #333333 !important;
+    border: 1px solid #cccccc !important;
+}
+
+
+/* Answer message */
+
+#answerMessage2 {
+    display: block !important;
+    margin-top: 15px !important;
+}
+
+#answerMessage2.correct {
+    color: green !important;
+}
+
+#answerMessage2.incorrect {
+    color: red !important;
+}
+
+
+/* Completion */
+
+.challenge-complete {
+    padding: 30px 10px !important;
+}
+
+.challenge-complete h3 {
+    font-size: 1.5em !important;
+    margin-bottom: 20px !important;
+}
+
+.challenge-complete p {
+    margin-bottom: 15px !important;
+}
