@@ -84,10 +84,11 @@
 							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Challenge 3</h2>
+									<p>The first two challenges could be solved here. This time, however, you can't. </p>
+                                    <p>There's something waiting for you inside your flat. Click below to find the first clue, and go find it. </p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="#" class="button" id="startChallenge3">Give me the damn clue already</a></li>
 									</ul>
 								</div>
 							</div>
@@ -371,6 +372,65 @@
 
     <p>You.</p>
 
+</div>
+
+
+<div id="challenge3Modal" class="challenge-modal">
+    <div class="challenge-box">
+
+        <button class="close-modal" id="closeChallenge3">&times;</button>
+
+        <h2 id="challenge3Title">Challenge 3</h2>
+
+        <div id="challenge3Content">
+            <p>
+                Your first clue is waiting for you.
+            </p>
+
+            <p>
+                <strong>Clue 1:</strong><br>
+                At first, we spent a lot of time watching it. Now we don't use it so much anymore, partially because it's not so bright. Where am I?
+            </p>
+
+            <p>The rest of the clues are at your place. Once you found them all, come back to the website and click the button below</p>
+        </div>
+
+        <button class="button" id="foundItButton">
+            I found it
+        </button>
+
+        <div id="challenge3Final" style="display: none;">
+
+            <p>
+           
+            </p>
+
+            <p>
+                For others, it might not have any value.<br>
+                But value is in the eyes of the beholder.<br>
+                At the same time, I tried to communicate your value for me in it.
+            </p>
+
+            <p>
+                What am I?
+            </p>
+
+            <input
+                type="text"
+                id="challenge3Answer"
+                placeholder="Your answer..."
+                autocomplete="off"
+            >
+
+            <button class="button" id="submitChallenge3">
+                Submit
+            </button>
+
+            <p id="challenge3Message"></p>
+
+        </div>
+
+    </div>
 </div>
 
 <script>const startChallenge = document.getElementById("startChallenge");
@@ -743,6 +803,108 @@ function finishChallenge() {
         }
 
     });
+</script>
+
+
+<script>
+/* =========================
+   Challenge 3
+   ========================= */
+
+const startChallenge3 = document.getElementById("startChallenge3");
+const challenge3Modal = document.getElementById("challenge3Modal");
+const closeChallenge3 = document.getElementById("closeChallenge3");
+
+const foundItButton = document.getElementById("foundItButton");
+const challenge3Final = document.getElementById("challenge3Final");
+
+const challenge3Answer = document.getElementById("challenge3Answer");
+const submitChallenge3 = document.getElementById("submitChallenge3");
+const challenge3Message = document.getElementById("challenge3Message");
+
+
+/* Open Challenge 3 */
+
+startChallenge3.addEventListener("click", function (event) {
+    event.preventDefault();
+
+    challenge3Modal.classList.add("show");
+
+    // Reset the initial state every time the challenge is opened
+    challenge3Final.style.display = "none";
+    foundItButton.style.display = "inline-block";
+
+    challenge3Answer.value = "";
+    challenge3Message.textContent = "";
+    challenge3Message.className = "";
+});
+
+
+/* Close Challenge 3 */
+
+closeChallenge3.addEventListener("click", function () {
+    challenge3Modal.classList.remove("show");
+});
+
+
+/* Close when clicking outside the box */
+
+challenge3Modal.addEventListener("click", function (event) {
+    if (event.target === challenge3Modal) {
+        challenge3Modal.classList.remove("show");
+    }
+});
+
+
+/* Player has completed the physical treasure hunt */
+
+foundItButton.addEventListener("click", function () {
+
+    foundItButton.style.display = "none";
+    challenge3Final.style.display = "block";
+
+    challenge3Answer.focus();
+});
+
+
+/* Submit final answer */
+
+submitChallenge3.addEventListener("click", function () {
+
+    const answer = challenge3Answer.value.trim().toLowerCase();
+
+    if (answer === "poem") {
+
+        challenge3Message.textContent =
+            "I hope you like it. I know it's not a Polene bag, but I put my heart into it, because you deserve it ❤️";
+
+        challenge3Message.className = "correct";
+
+        challenge3Answer.disabled = true;
+        submitChallenge3.disabled = true;
+
+    } else {
+
+        challenge3Message.textContent =
+            "Not quite. You know what you found. Try again.";
+
+        challenge3Message.className = "incorrect";
+    }
+});
+
+
+/* Allow Enter key to submit */
+
+challenge3Answer.addEventListener("keydown", function (event) {
+
+    if (event.key === "Enter") {
+        event.preventDefault();
+        submitChallenge3.click();
+    }
+
+});
+
+
 </script>
 	</body>
 </html>
