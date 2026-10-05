@@ -4221,3 +4221,433 @@ input, select, textarea {
 #challenge3Message.incorrect {
     color: red !important;
 }
+
+/* =========================
+   Challenge 4
+   ========================= */
+
+/* =========================================
+   CHALLENGE 4 MODAL
+========================================= */
+
+/* =========================================
+   CHALLENGE 4 MODAL
+========================================= */
+
+#challenge4Modal.challenge4-modal {
+    display: none !important;
+
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+
+    width: 100vw !important;
+    height: 100vh !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    z-index: 999999 !important;
+
+    background: rgba(0, 0, 0, 0.75) !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    overflow-y: auto !important;
+    box-sizing: border-box !important;
+}
+
+#challenge4Modal.challenge4-modal.show {
+    display: flex !important;
+}
+
+
+/* =========================================
+   MODAL BOX
+========================================= */
+
+#challenge4Modal .challenge4-box {
+    position: relative !important;
+
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: 90% !important;
+    max-width: 650px !important;
+    max-height: 85vh !important;
+
+    margin: auto !important;
+    padding: 40px !important;
+
+    overflow-y: auto !important;
+
+    background: #ffffff !important;
+    color: #333333 !important;
+
+    border-radius: 10px !important;
+
+    box-sizing: border-box !important;
+
+    text-align: center !important;
+
+    z-index: 1000000 !important;
+}
+
+
+/* =========================================
+   CLOSE BUTTON
+========================================= */
+
+#challenge4Modal #closeChallenge4 {
+    position: absolute !important;
+
+    top: 10px !important;
+    right: 15px !important;
+
+    display: block !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    background: transparent !important;
+
+    color: #333333 !important;
+
+    font-size: 30px !important;
+    line-height: 1 !important;
+
+    cursor: pointer !important;
+
+    z-index: 1000001 !important;
+}
+
+
+/* =========================================
+   TEXT
+========================================= */
+
+#challenge4Modal .challenge4-box h2,
+#challenge4Modal .challenge4-box h3,
+#challenge4Modal .challenge4-box p {
+    display: block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #333333 !important;
+}
+
+
+/* =========================================
+   MAIN MENU
+========================================= */
+
+#challenge4Menu {
+    display: block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #333333 !important;
+}
+
+.challenge4-buttons {
+    display: flex !important;
+
+    justify-content: center !important;
+    align-items: center !important;
+
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+
+    margin: 25px 0 !important;
+}
+
+
+/* =========================================
+   MAIN NAVIGATION BUTTONS
+========================================= */
+
+#pastButton,
+#presentButton,
+#futureButton {
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+
+    z-index: 1000001 !important;
+
+    width: auto !important;
+    height: 3.25em !important;
+
+    margin: 8px !important;
+    padding: 0 1.5em !important;
+
+    line-height: 3.25em !important;
+
+    background-color: #ffffff !important;
+    color: #333333 !important;
+
+    border: solid 1px #333333 !important;
+    border-radius: 0 !important;
+
+    font-family: inherit !important;
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+
+    text-align: center !important;
+
+    cursor: pointer !important;
+
+    box-sizing: border-box !important;
+}
+
+#pastButton:hover,
+#presentButton:hover,
+#futureButton:hover {
+    background-color: #f2f2f2 !important;
+}
+
+
+/* =========================================
+   PROGRESS
+========================================= */
+
+#challenge4Progress {
+    margin-top: 20px !important;
+    font-style: italic !important;
+}
+
+
+/* =========================================
+   INDIVIDUAL SECTIONS
+========================================= */
+
+.challenge4-section {
+    display: none;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #333333 !important;
+}
+
+.challenge4-section.active {
+    display: block !important;
+}
+
+
+/* =========================================
+   PAST
+========================================= */
+
+#pastAnswer {
+    display: block !important;
+
+    width: 100% !important;
+    height: auto !important;
+
+    margin: 20px 0 15px !important;
+    padding: 12px !important;
+
+    box-sizing: border-box !important;
+
+    background: #ffffff !important;
+    color: #333333 !important;
+
+    border: 1px solid #cccccc !important;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+#pastSubmit {
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 1000001 !important;
+
+    width: auto !important;
+    height: 3.25em !important;
+
+    margin: 8px !important;
+    padding: 0 1.75em !important;
+
+    line-height: 3.25em !important;
+
+    background-color: #ffffff !important;
+    color: #333333 !important;
+
+    border: solid 1px #333333 !important;
+
+    font-family: inherit !important;
+    font-size: 0.8em !important;
+    font-weight: bold !important;
+
+    cursor: pointer !important;
+}
+
+
+/* =========================================
+   PRESENT OPTIONS
+========================================= */
+
+.present-options {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 10px !important;
+
+    margin: 25px 0 !important;
+}
+
+.present-option {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 12px 15px !important;
+
+    background: #ffffff !important;
+    color: #333333 !important;
+
+    border: 1px solid #cccccc !important;
+
+    cursor: pointer !important;
+
+    text-align: left !important;
+
+    box-sizing: border-box !important;
+}
+
+.present-option:hover {
+    background-color: #f2f2f2 !important;
+}
+
+
+/* =========================================
+   FUTURE STATEMENTS
+========================================= */
+
+.future-statements {
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    gap: 10px !important;
+
+    margin: 25px 0 !important;
+}
+
+.future-statement {
+    display: block !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 14px 15px !important;
+
+    background: #ffffff !important;
+    color: #333333 !important;
+
+    border: 1px solid #cccccc !important;
+
+    cursor: pointer !important;
+
+    text-align: center !important;
+
+    box-sizing: border-box !important;
+}
+
+.future-statement:hover {
+    background-color: #f2f2f2 !important;
+}
+
+
+/* =========================================
+   BACK BUTTONS
+========================================= */
+
+#pastBack,
+#presentBack,
+#futureBack {
+    display: inline-block !important;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    position: relative !important;
+    z-index: 1000001 !important;
+
+    margin-top: 20px !important;
+    padding: 10px 20px !important;
+
+    background: transparent !important;
+    color: #333333 !important;
+
+    border: none !important;
+
+    cursor: pointer !important;
+
+    text-decoration: underline !important;
+}
+
+
+/* =========================================
+   MESSAGES
+========================================= */
+
+#pastMessage,
+#presentMessage,
+#futureMessage {
+    display: block !important;
+
+    margin-top: 20px !important;
+
+    color: #333333 !important;
+}
+
+#pastMessage.correct,
+#presentMessage.correct,
+#futureMessage.correct {
+    color: green !important;
+}
+
+
+/* =========================================
+   FINAL SECTION
+========================================= */
+
+#challenge4Final {
+    display: none;
+
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    color: #333333 !important;
+}
+
+#challenge4Final.show {
+    display: block !important;
+}
+
+#challenge4Final h2,
+#challenge4Final h3 {
+    color: #333333 !important;
+}
