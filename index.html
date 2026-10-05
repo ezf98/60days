@@ -101,10 +101,10 @@
 							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
+									<h2>Challenge 4</h2>
+									<p>3 paths are here. You will need to explore them all to find the answers.</p>
 									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
+										<li><a href="#" class="button" id="startChallenge4">Show me the paths</a></li>
 									</ul>
 								</div>
 							</div>
@@ -320,59 +320,7 @@
     </div>
 </div>
 
-<div id="hiddenMessageText">
 
-    <p>I still remember how strange it felt when we first met.</p>
-
-    <p>What started as something I couldn't possibly predict became one of the most important parts of my life.</p>
-
-    <p>And somehow, all these memories later, I still find myself smiling at the smallest things about you.</p>
-
-    <p>Not every day has been perfect, but I wouldn't trade the journey that brought us here.</p>
-
-    <p>There are so many moments with you that I wish I could keep in a little box and open whenever I miss you.</p>
-
-    <p>Time has a funny way of making you realize which moments actually matter.</p>
-
-    <p>One thing I know for certain is that meeting you changed the direction of my life.</p>
-
-    <p>Sometimes I wonder how many tiny decisions had to happen for our paths to cross.</p>
-
-    <p>Perhaps that's why I don't think of us as one big story, but thousands of little ones.</p>
-
-    <p>Every stupid joke, every conversation, every walk, every quiet moment somehow became part of it.</p>
-
-    <p>Now we're here, looking back at everything we've already lived through together.</p>
-
-    <p>Despite everything that has happened, there is still so much I want to experience with you.</p>
-
-    <p>Maybe that is what I love most about us: the story isn't finished.</p>
-
-    <p>You are still the person I want beside me when the next chapter begins.</p>
-
-    <p>Life feels different when you know there is someone you genuinely want to share it with.</p>
-
-    <p>I don't know exactly what the future will look like.</p>
-
-    <p>For once, though, I don't feel like I need to know every detail.</p>
-
-    <p>Enough of the future is already clear to me.</p>
-
-    <p>When I think about where I want to be, I keep finding the same person there.</p>
-
-    <p>With you, even ordinary moments have become memories I want to keep.</p>
-
-    <p>Yesterday is already part of our story, but tomorrow is still waiting for us.</p>
-
-    <p>You are the person I choose to walk beside.</p>
-
-    <p>One person can change the meaning of an entire life.</p>
-
-    <p>Underneath all the memories, all the jokes, and all the chaos, there is something very simple.</p>
-
-    <p>You.</p>
-
-</div>
 
 
 <div id="challenge3Modal" class="challenge-modal">
@@ -431,6 +379,186 @@
         </div>
 
     </div>
+</div>
+
+<div id="challenge4Modal" class="challenge4-modal">
+
+    <div class="challenge4-box">
+
+        <button type="button" id="closeChallenge4" class="close-modal">
+            &times;
+        </button>
+
+        <div id="challenge4Menu">
+
+            <h2>Three paths</h2>
+
+            <p>
+                Three paths are in front of you.
+                One of where we've been.
+                One of where we are.
+                One of where we're going.
+            </p>
+
+            <p>
+                You can explore all three.
+                Where do you want to go first?
+            </p>
+
+            <button type="button" id="pastButton">
+                Past
+            </button>
+
+            <button type="button" id="presentButton">
+                Present
+            </button>
+
+            <button type="button" id="futureButton">
+                Future
+            </button>
+
+        </div>
+
+
+        <div id="pastSection" class="challenge4-section">
+
+            <h2>Past</h2>
+
+            <p>
+                We were hugging in bed. I whispered I had something to tell you, followed by a silence.
+                What did I say?
+            </p>
+
+            <input
+                type="text"
+                id="pastAnswer"
+                placeholder="Your answer..."
+            >
+
+            <button type="button" id="pastSubmit">
+                Submit
+            </button>
+
+            <p id="pastMessage"></p>
+
+            <button type="button" id="pastBack">
+                Back
+            </button>
+
+        </div>
+
+
+        <div id="presentSection" class="challenge4-section">
+
+            <h2>Present</h2>
+
+            <p>
+                What does a typical evening with us look like?
+            </p>
+
+            <button
+                type="button"
+                class="present-option"
+                data-answer="correct">
+                Going to the supermarket, having dinner, doing murdoku, sexy time.
+            </button>
+
+            <button
+                type="button"
+                class="present-option"
+                data-answer="wrong">
+                Going hiking
+            </button>
+
+            <button
+                type="button"
+                class="present-option"
+                data-answer="wrong">
+                Planning our finances
+            </button>
+
+            <button
+                type="button"
+                class="present-option"
+                data-answer="wrong">
+                Studying African literature
+            </button>
+
+            <p id="presentMessage"></p>
+
+            <button type="button" id="presentBack">
+                Back
+            </button>
+
+        </div>
+
+
+        <div id="futureSection" class="challenge4-section">
+
+            <h2>Future</h2>
+
+            <p>
+                Choose everything you want more of.
+            </p>
+
+            <button type="button" class="future-statement">
+                More slow mornings.
+            </button>
+
+            <button type="button" class="future-statement">
+                More late night conversations.
+            </button>
+
+            <button type="button" class="future-statement">
+                More places we've never been.
+            </button>
+
+            <button type="button" class="future-statement">
+                More things to laugh about.
+            </button>
+
+            <button type="button" class="future-statement">
+                More strenth to face things together.
+            </button>
+
+            <button type="button" class="future-statement">
+                More reasons to choose each other.
+            </button>
+
+            <p id="futureMessage"></p>
+
+            <button type="button" id="futureBack">
+                Back
+            </button>
+
+        </div>
+
+
+        <div id="challenge4Final">
+
+            <h2>You looked behind you (And saw that astronomical ass).</h2>
+
+            <p>
+                You looked around you.
+                You looked ahead.
+            </p>
+
+            <p>
+                And somehow, all three led back to the same place. Us.
+            </p>
+
+            <p>
+                <strong>Us.</strong>
+            </p>
+
+            <p>
+                I think that's enough for today, my lapochka. ❤️
+            </p>
+
+        </div>
+
+    </div>
+
 </div>
 
 <script>const startChallenge = document.getElementById("startChallenge");
@@ -807,104 +935,299 @@ function finishChallenge() {
 
 
 <script>
-/* =========================
-   Challenge 3
-   ========================= */
+document.addEventListener("DOMContentLoaded", function () {
 
-const startChallenge3 = document.getElementById("startChallenge3");
-const challenge3Modal = document.getElementById("challenge3Modal");
-const closeChallenge3 = document.getElementById("closeChallenge3");
+    /* =========================
+       MAIN MODAL
+    ========================= */
 
-const foundItButton = document.getElementById("foundItButton");
-const challenge3Final = document.getElementById("challenge3Final");
+    const startButton = document.getElementById("startChallenge4");
+    const modal = document.getElementById("challenge4Modal");
+    const closeButton = document.getElementById("closeChallenge4");
 
-const challenge3Answer = document.getElementById("challenge3Answer");
-const submitChallenge3 = document.getElementById("submitChallenge3");
-const challenge3Message = document.getElementById("challenge3Message");
-
-
-/* Open Challenge 3 */
-
-startChallenge3.addEventListener("click", function (event) {
-    event.preventDefault();
-
-    challenge3Modal.classList.add("show");
-
-    // Reset the initial state every time the challenge is opened
-    challenge3Final.style.display = "none";
-    foundItButton.style.display = "inline-block";
-
-    challenge3Answer.value = "";
-    challenge3Message.textContent = "";
-    challenge3Message.className = "";
-});
-
-
-/* Close Challenge 3 */
-
-closeChallenge3.addEventListener("click", function () {
-    challenge3Modal.classList.remove("show");
-});
-
-
-/* Close when clicking outside the box */
-
-challenge3Modal.addEventListener("click", function (event) {
-    if (event.target === challenge3Modal) {
-        challenge3Modal.classList.remove("show");
+    if (!startButton || !modal) {
+        console.error("Challenge 4: main elements not found.");
+        return;
     }
-});
 
-
-/* Player has completed the physical treasure hunt */
-
-foundItButton.addEventListener("click", function () {
-
-    foundItButton.style.display = "none";
-    challenge3Final.style.display = "block";
-
-    challenge3Answer.focus();
-});
-
-
-/* Submit final answer */
-
-submitChallenge3.addEventListener("click", function () {
-
-    const answer = challenge3Answer.value.trim().toLowerCase();
-
-    if (answer === "poem") {
-
-        challenge3Message.textContent =
-            "I hope you like it. I know it's not a Polene bag, but I put my heart into it, because you deserve it ❤️";
-
-        challenge3Message.className = "correct";
-
-        challenge3Answer.disabled = true;
-        submitChallenge3.disabled = true;
-
-    } else {
-
-        challenge3Message.textContent =
-            "Not quite. You know what you found. Try again.";
-
-        challenge3Message.className = "incorrect";
-    }
-});
-
-
-/* Allow Enter key to submit */
-
-challenge3Answer.addEventListener("keydown", function (event) {
-
-    if (event.key === "Enter") {
+    startButton.addEventListener("click", function (event) {
         event.preventDefault();
-        submitChallenge3.click();
+        event.stopPropagation();
+
+        modal.classList.add("show");
+
+        showMenu();
+    });
+
+    if (closeButton) {
+        closeButton.addEventListener("click", function () {
+            modal.classList.remove("show");
+        });
+    }
+
+
+    /* =========================
+       SECTIONS
+    ========================= */
+
+    const menu = document.getElementById("challenge4Menu");
+    const pastSection = document.getElementById("pastSection");
+    const presentSection = document.getElementById("presentSection");
+    const futureSection = document.getElementById("futureSection");
+    const finalSection = document.getElementById("challenge4Final");
+
+    const pastButton = document.getElementById("pastButton");
+    const presentButton = document.getElementById("presentButton");
+    const futureButton = document.getElementById("futureButton");
+
+    const pastBack = document.getElementById("pastBack");
+    const presentBack = document.getElementById("presentBack");
+    const futureBack = document.getElementById("futureBack");
+
+    let pastCompleted = false;
+    let presentCompleted = false;
+    let futureCompleted = false;
+
+
+    /* =========================
+       SHOW / HIDE SECTIONS
+    ========================= */
+
+    function hideAllSections() {
+        if (menu) menu.style.display = "none";
+        if (pastSection) pastSection.style.display = "none";
+        if (presentSection) presentSection.style.display = "none";
+        if (futureSection) futureSection.style.display = "none";
+        if (finalSection) finalSection.style.display = "none";
+    }
+
+    function showMenu() {
+        hideAllSections();
+
+        if (menu) {
+            menu.style.display = "block";
+        }
+
+        checkOverallCompletion();
+    }
+
+    function showSection(section) {
+        hideAllSections();
+
+        if (section) {
+            section.style.display = "block";
+        }
+    }
+
+
+    /* =========================
+       PAST
+    ========================= */
+
+    if (pastButton) {
+        pastButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showSection(pastSection);
+        });
+    }
+
+
+    /* =========================
+       PRESENT
+    ========================= */
+
+    if (presentButton) {
+        presentButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showSection(presentSection);
+        });
+    }
+
+
+    /* =========================
+       FUTURE
+    ========================= */
+
+    if (futureButton) {
+        futureButton.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showSection(futureSection);
+        });
+    }
+
+
+    /* =========================
+       BACK BUTTONS
+    ========================= */
+
+    if (pastBack) {
+        pastBack.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showMenu();
+        });
+    }
+
+    if (presentBack) {
+        presentBack.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showMenu();
+        });
+    }
+
+    if (futureBack) {
+        futureBack.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            showMenu();
+        });
+    }
+
+
+    /* =========================
+       PAST QUESTION
+    ========================= */
+
+    const pastSubmit = document.getElementById("pastSubmit");
+    const pastAnswer = document.getElementById("pastAnswer");
+    const pastMessage = document.getElementById("pastMessage");
+
+    if (pastSubmit) {
+        pastSubmit.addEventListener("click", function () {
+
+            const answer = pastAnswer.value.trim().toLowerCase();
+
+            if (
+                answer === "I love you" ||
+                answer === "i love you"
+            ) {
+                pastCompleted = true;
+
+                pastMessage.textContent =
+                    "Correct. And I love you more with each day that passes ❤️";
+
+                pastMessage.className = "correct";
+
+                checkOverallCompletion();
+
+            } else {
+
+                pastMessage.textContent =
+                    "Not quite. Think about something we say every day before we go to sleep.";
+
+                pastMessage.className = "incorrect";
+            }
+        });
+    }
+
+
+    /* =========================
+       PRESENT QUESTION
+    ========================= */
+
+    const presentOptions = document.querySelectorAll(".present-option");
+    const presentMessage = document.getElementById("presentMessage");
+
+    presentOptions.forEach(function (option) {
+
+        option.addEventListener("click", function () {
+
+            const answer = option.getAttribute("data-answer");
+
+            if (answer === "correct") {
+
+                presentCompleted = true;
+
+                presentMessage.textContent =
+                    "Correct. And I wouldn't change that for anything in the world ❤️";
+
+                presentMessage.className = "correct";
+
+                checkOverallCompletion();
+
+            } else {
+
+                presentMessage.textContent =
+                    "Nope, you must be thinking of your side dude. Try again. 😂";
+
+                presentMessage.className = "incorrect";
+            }
+
+        });
+
+    });
+
+
+    /* =========================
+       FUTURE
+    ========================= */
+
+    const futureStatements =
+        document.querySelectorAll(".future-statement");
+
+    const futureMessage =
+        document.getElementById("futureMessage");
+
+    let futureClicked = 0;
+
+    futureStatements.forEach(function (statement) {
+
+        statement.addEventListener("click", function () {
+
+            if (statement.classList.contains("selected")) {
+                return;
+            }
+
+            statement.classList.add("selected");
+
+            futureClicked++;
+
+            if (futureClicked === futureStatements.length) {
+
+                futureCompleted = true;
+
+                futureMessage.textContent =
+                    "HA! You activated my trap card, you are getting all of them, muhahahaha ❤️";
+
+                futureMessage.className = "correct";
+
+                checkOverallCompletion();
+            }
+
+        });
+
+    });
+
+
+    /* =========================
+       FINAL COMPLETION
+    ========================= */
+
+    function checkOverallCompletion() {
+
+        if (
+            pastCompleted &&
+            presentCompleted &&
+            futureCompleted
+        ) {
+
+            if (menu) menu.style.display = "none";
+
+            if (pastSection) pastSection.style.display = "none";
+            if (presentSection) presentSection.style.display = "none";
+            if (futureSection) futureSection.style.display = "none";
+
+            if (finalSection) {
+                finalSection.style.display = "block";
+            }
+        }
     }
 
 });
-
-
 </script>
 	</body>
 </html>
